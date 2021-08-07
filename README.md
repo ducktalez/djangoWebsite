@@ -11,4 +11,6 @@
 
 `python manage.py migrate`
 
+`python manage.py migrate --run-syncdb`
+
 https://www.softcover.io/read/92780ad5/django_book/django_mvc

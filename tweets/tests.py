@@ -4,7 +4,6 @@ from django.test import TestCase
 from django.urls import reverse
 from .models import Tweet
 
-
 class TweetTests(TestCase):
     def setUp(self):
         self.user = get_user_model().objects.create_user(
@@ -18,7 +17,7 @@ class TweetTests(TestCase):
             user=self.user,
         )
 
-    def test_tweet_string(self):
+    def test_string_representation(self):
         tweet = Tweet(body='A sample tweet')
         self.assertEqual(str(tweet), tweet.body)
 
